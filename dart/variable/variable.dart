@@ -31,6 +31,13 @@ class A {
 void randomFunction() {
   // local variable
   var l = 4;
+  int? nullableLocal;
+  late int nonNullLabelLocal; // use late keyword for declear null variable
+
+  nullableLocal = 15;
+  // nonNullLabelLocal = 25;
+  print(nullableLocal);
+  // print(nonNullLabelLocal.isEven);
 }
 
 void main() {
@@ -43,4 +50,6 @@ void main() {
   print(A.a);
   A.nullableStatic = 6;
   A.nonNullAbleStatic = 5;
+
+  randomFunction();
 }
